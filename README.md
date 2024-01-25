@@ -50,8 +50,8 @@
 |  | `/reporting-service.js` | カスタムハンドラ |
 |  | `/external/aribaOpenAPI.js` | AribaのAPIを呼び出すカスタムモジュール |
 |  | `/lib/designTimeTools.js` | コーディング時に利用するカスタムモジュール |
-|  | `/lib/queryOptionParser.js` | フロントエンドからのODataクエリを処理するカスタムモジュール |
-|  | `/lib/responseProcessor.js` | フロントエンドへのレスポンスを微調整するカスタムモジュール |
+|  | `/lib/queryOptionParser.js` | フロントエンドからのODataクエリをパースするカスタムモジュール |
+|  | `/lib/responseProcessor.js` | フロントエンドへのODataレスポンスを$selectや$orderbyにより調整するカスタムモジュール |
 | `./xs-security.json`       | | アプリを利用するために必要な権限ロールの設定 |
 | `./mta.yaml`           | | Multi Target Application (mta) : BTP上のマイクロサービスを横断・統合したデプロイ設定 |
 | `./package.json`       | | プロジェクトのメタデータと設定 |
