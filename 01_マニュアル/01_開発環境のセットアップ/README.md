@@ -1,12 +1,9 @@
 # 1. 開発環境のセットアップ
 
-## ハンズオンの事前準備
+## 本マニュアルのステップの全体像
 1. SAP Ariba APIの設定
 2. SAP BTP 上の開発環境のセットアップ
 
-
-## ハンズオンの手順
-ハンズオンを始める前に、以下の事前準備を確認し、必要なツールやアカウントが設定されていることを確認してください。
 
 ### 1. SAP Ariba APIの設定
 
@@ -26,6 +23,11 @@
 
 ![CreateDevSpace](../../00_Assets/01_setup/02_FullStackCloudApp.png)
 
-3. SAP Business Application Studio のトップ画面が表示されます。今回は講師の方で用意したソースコードを利用しますので、「Clone from Git」をクリックしてください。
+3. SAP Business Application Studio のトップ画面が表示されます。これで開発環境の設定は完了です。
 
 ![BAS_top](../../00_Assets/01_setup/03_BAS_top.png)
+
+
+## <span style="color: pink">次のステップ</span>
+
+[2. バックエンドアプリの構築](../02_バックエンドアプリの構築/README.md)
