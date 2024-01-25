@@ -21,11 +21,11 @@
 
 3. ポップアップが表示されたら「開く」をクリックしてクローンしたフォルダに移動します。
 
-![envVar](../../00_Assets/02_backend/02_openTerminal.png)
+![openFolder](../../00_Assets/02_backend/02_openFolder.png)
 
 4. プロジェクトがクローンされたことが確認できます。
 
-![openFolder](../../00_Assets/02_backend/03_clonedDir.png)
+![clonedDir](../../00_Assets/02_backend/03_clonedDir.png)
 
 このプロジェクトのディレクトリ構成は以下の通りです。
 
