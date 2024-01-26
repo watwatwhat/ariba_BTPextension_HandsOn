@@ -64,7 +64,7 @@
 
 ![fioriDashboard](../../00_Assets/03_frontend/07_fioriDashboard.png)
 
-7. この状態で先ほどのプレビューを開くと、「Web Applications」の部分に「/ariba-report-fe-<ユーザー名>/webapp/index.html」が表示されているはずです。こちらをクリックしてください。
+7. この状態で先ほどのプレビューを開くと、「Web Applications」の部分に `/ariba-report-fe-<ユーザー名>/webapp/index.html` が表示されているはずです。こちらをクリックしてください。
 
 ![webApp](../../00_Assets/03_frontend/08_webApp.png)
 
