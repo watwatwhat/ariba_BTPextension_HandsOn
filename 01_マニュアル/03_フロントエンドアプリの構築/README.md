@@ -1,5 +1,9 @@
 # 3. フロントエンドアプリの構築
 
+> 本ステップでは、下図赤枠の部分について実装を行います。
+> ![frontendArchitecture](../../00_Assets/03_frontend/00_architecture.png)
+
+
 ## 本マニュアルのステップの全体像
 1. Application Generator を起動
 2. Fiori Elements を利用したフロントエンドアプリ生成
