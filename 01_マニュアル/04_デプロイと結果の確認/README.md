@@ -21,7 +21,7 @@
 |   項目   |         値                             |
 | -------------- |--------------------------       |
 | Select fyour HTML5 application runtime    | Managed Approuter         |
-| Enter a unique business solution ...   | aribaOpenAPI_proxy_<ユーザーID>   |
+| Enter a unique business solution ...   | ManagedApprouter-<ユーザーID>   |
 | Do you plan to add a UI ?    | Yes  |
 
 ![approuterConfig](../../00_Assets/04_deploy/03_approuterConfig.png)
@@ -30,19 +30,31 @@
 
 ![mtaUpdated](../../00_Assets/04_deploy/04_mtaUpdated.png)
 
+5. 生成された Fiori アプリケーション（画面を表示するフロントエンドアプリ）の管理コンソールで、「Add Deploy Config」をクリックします。
+
+![addDeployConfig](../../00_Assets/04_deploy/04-1_addDeployConfig.png)
+
+6. ローカルのCAPプロジェクトにより提供されるODataサービスをポイントします。
+
+![pointToLocalCAP](../../00_Assets/04_deploy/04-2_pointToLocalCAP.png)
+
+7. これにより、`./app/ariba-report-fe-<ユーザーID>/xs-app.json` に以下の設定が追加されます。
+![configuredRoute](../../00_Assets/04_deploy/04-3_configuredRoute.png)
+
+
 ### 2. プロジェクトのビルド
 
 1. `mta.yaml` ファイル上で右クリックをしてください。表示されるメニューのうち「 Build MTA Project 」をクリックします。
 
 ![buildMTA](../../00_Assets/04_deploy/05_buildMTA.png)
 
-2. `mta_archives/aribaOpenAPI_proxy_1.0.0.mtar` が生成されます。
+2. `mta_archives/aribaOpenAPI_proxy-<ユーザーID>_1.0.0.mtar` が生成されます。
 
 ![mtaArchive](../../00_Assets/04_deploy/06_mtaArchive.png)
 
 ### 3. プロジェクトのデプロイ
 
-1. `mta_archives/aribaOpenAPI_proxy_1.0.0.mtar` ファイル上で右クリックをしてください。表示されるメニューのうち「 Deploy MTA Archive 」をクリックします。
+1. `mta_archives/aribaOpenAPI_proxy-<ユーザーID>_1.0.0.mtar` ファイル上で右クリックをしてください。表示されるメニューのうち「 Deploy MTA Archive 」をクリックします。
 
 ![deployMTA](../../00_Assets/04_deploy/07_deployMTA.png)
 
