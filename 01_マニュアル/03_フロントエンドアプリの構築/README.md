@@ -58,7 +58,7 @@
 | Please choose the target    | Cloud Foundry            |
 | Destination name            | None                     |
 
-![deployConf](../../00_Assets/03_frontend/06_deployConf.png)
+![deployConf](../../00_Assets/03_frontend/06_deployConf_none.png)
 
 6. `./app` 配下にフロントエンドのアプリケーションが生成されます。
 

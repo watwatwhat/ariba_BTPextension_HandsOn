@@ -15,7 +15,7 @@
 
 |   項目   |         値     |
 | -------------- |-------------------------- |
-| リポジトリURL    | https://example...   |
+| リポジトリURL    | https://github.com/watwatwhat/ariba_BTPextension_HandsOn_src.git |
 
 ![repositoryURL](../../00_Assets/02_backend/01_repositoryURL.png)
 

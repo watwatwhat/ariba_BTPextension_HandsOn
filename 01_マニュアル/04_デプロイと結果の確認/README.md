@@ -8,6 +8,12 @@
 
 ### 1. UI デプロイ設定の追加
 
+> 下記「Managed Approuter へのデプロイ設定」と「Fiori UIアプリケーションからバックエンドODataサービスへの宛先設定」は、必ず指定の順番で実行してください。<br>
+> 逆に実行すると互いに設定を上書きしてしまい、期待した動作が実行できません。<br>
+> もし逆に実行してしまった場合は、「Fiori UIアプリケーションからバックエンドODataサービスへの宛先設定」を再度実行してください。
+
+#### Managed Approuter へのデプロイ設定
+
 1. `mta.yaml` ファイル上で右クリックをしてください。表示されるメニューのうち「 Create MTA Module from Template 」をクリックします。
 
 ![mtaModule_fromTemplate](../../00_Assets/04_deploy/01_mtaModule_fromTemplate.png)
@@ -28,7 +34,9 @@
 
 4. デプロイに関する設定ファイルである `mta.yaml` に UI デプロイに関わる情報が付加されます。
 
-![mtaUpdated](../../00_Assets/04_deploy/04_mtaUpdated.png)
+![mtaUpdated](../../00_Assets/04_deploy/04_mtaUpdated_zoomout.png)
+
+#### Fiori UIアプリケーションからバックエンドODataサービスへの宛先設定
 
 5. 生成された Fiori アプリケーション（画面を表示するフロントエンドアプリ）の管理コンソールで、「Add Deploy Config」をクリックします。
 
@@ -41,6 +49,12 @@
 7. これにより、`./app/ariba-report-fe-<ユーザーID>/xs-app.json` に以下の設定が追加されます。
 ![configuredRoute](../../00_Assets/04_deploy/04-3_configuredRoute.png)
 
+8. `mta.yaml`には以下の設定が追加されます。
+![configuredDestination](../../00_Assets/04_deploy/04-4_configuredDestination.png)
+
+
+> ここって何をしているの？<br>
+> [デプロイアーキテクチャ](../../03_コラム/デプロイアーキテクチャ.md)
 
 ### 2. プロジェクトのビルド
 
@@ -51,6 +65,7 @@
 2. `mta_archives/aribaOpenAPI_proxy-<ユーザーID>_1.0.0.mtar` が生成されます。
 
 ![mtaArchive](../../00_Assets/04_deploy/06_mtaArchive.png)
+
 
 ### 3. プロジェクトのデプロイ
 
@@ -69,6 +84,7 @@
 4. デプロイが無事完了しました。
 
 ![deployCompleted](../../00_Assets/04_deploy/10_deployCompleted.png)
+
 
 ### 4. 結果の確認
 
