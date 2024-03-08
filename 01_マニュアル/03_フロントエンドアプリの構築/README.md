@@ -26,7 +26,7 @@
 |   項目   |         値                             |
 | -------------- |--------------------------       |
 | Data source    | Use a Local CAP Project         |
-| Choose your CAP project   | aribaOpenAPI_proxy   |
+| Choose your CAP project   | ariba_BTPextension_HnadsOn_src   |
 | OData service    | Reporting Service (Node.js)   |
 
 ![dataSource](../../00_Assets/03_frontend/03_dataSource.png)
