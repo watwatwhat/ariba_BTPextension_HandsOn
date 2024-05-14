@@ -81,7 +81,7 @@ SAP Ariba 環境のAPIキーやレルム等の情報については、セキュ�
 npm install
 ```
 
-> [!INFO]
+> [!NOTE]
 > npm は今回用いているNode.jsのパッケージ管理ツールです。
 > このコマンドを実行すると、package.jsonに記載された依存パッケージが一括でインストールされます。
 
@@ -89,7 +89,7 @@ npm install
 cds watch
 ```
 
-> [!INFO]
+> [!NOTE]
 > cds watch は、CAPアプリケーションをプレビューするためのコマンドです。
 > このコマンドを実行するとCAPサーバーがローカル（今回はSAP Business Applciation StudioのDevSpace内）で立ち上がります。
 
@@ -107,7 +107,7 @@ cds watch
 > 既知の制約として、最大表示件数が40件となります。これはSAP Ariba Operational Reporting API の1回あたりの最大返答レコード数が40であることに依存しています。
 > より多くのレコードを一覧化する必要がある場合には、そのハンドリングロジックをCAPアプリケーション内に記述する必要があります。
 
-> [!INFO]
+> [!NOTE]
 > アプリケーションのソースコード解説については、下記をご参照ください。
 > [コラム：今回のアプリケーションの仕組み](../../03_コラム/02_ApplicationLogic.md) 
 
