@@ -80,9 +80,18 @@ SAP Ariba 環境のAPIキーやレルム等の情報については、セキュ�
 ```bash
 npm install
 ```
+
+> [!INFO]
+> npm は今回用いているNode.jsのパッケージ管理ツールです。
+> このコマンドを実行すると、package.jsonに記載された依存パッケージが一括でインストールされます。
+
 ```bash
 cds watch
 ```
+
+> [!INFO]
+> cds watch は、CAPアプリケーションをプレビューするためのコマンドです。
+> このコマンドを実行するとCAPサーバーがローカル（今回はSAP Business Applciation StudioのDevSpace内）で立ち上がります。
 
 ![command](../../00_Assets/02_backend/06_command.png)
 
@@ -93,6 +102,14 @@ cds watch
 4. SAP Ariba の Operational Regional API から取得したデータを OData (もどき) に変換してクライアントに返却しています。SAP Ariba の Operational Regional API 側の制約により、最大表示件数は40件です。
 
 ![dataReturned](../../00_Assets/02_backend/08_dataReturned.png)
+
+> [!WARNING]
+> 既知の制約として、最大表示件数が40件となります。これはSAP Ariba Operational Reporting API の1回あたりの最大返答レコード数が40であることに依存しています。
+> より多くのレコードを一覧化する必要がある場合には、そのハンドリングロジックをCAPアプリケーション内に記述する必要があります。
+
+> [!INFO]
+> アプリケーションのソースコード解説については、下記をご参照ください。
+> [コラム：今回のアプリケーションの仕組み](../../03_コラム/02_ApplicationLogic.md) 
 
 ## 次のステップ
 

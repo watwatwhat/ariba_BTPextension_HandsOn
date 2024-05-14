@@ -7,7 +7,8 @@
 
 ### 1. SAP Ariba APIの設定
 
-**TODO**
+> [!WARNING]
+> To Be Added!
 
 ### 2. SAP BTP 上の開発環境のセットアップ
 
@@ -24,12 +25,10 @@
 | Dev Space 名    | ariba_UIExtension   |
 
 ![CreateDevSpace](../../00_Assets/01_setup/02_FullStackCloudApp.png)
-:::
-**INFO**
-[コラム：DevSpaceとは？](../../03_コラム/01_DevSpace.md)
-:::
+
 > [!TIP]
-> Optional information to help a user be more successful.
+> DevSpaceについて、より詳しく知りたい場合は下記をご参照ください。
+> [コラム：DevSpaceとは？](../../03_コラム/01_DevSpace.md) 
 
 3. SAP Business Application Studio のトップ画面が表示されます。これで開発環境の設定は完了です。
 

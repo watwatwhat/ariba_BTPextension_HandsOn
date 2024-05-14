@@ -63,4 +63,4 @@
 ## さらなる深みへ！ 参考文献のご紹介
 | サイト名        |   URL   |
 | -------------- | ------- |
-| CAP 公式ドキュメント: CAPire        | https://cap.cloud.sap/docs/get-started/hello-world |
+| CAP 公式ドキュメント: CAPire | https://cap.cloud.sap/docs/get-started/hello-world |
