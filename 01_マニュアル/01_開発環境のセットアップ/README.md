@@ -1,17 +1,19 @@
 # 1. 開発環境のセットアップ
 
-## 本マニュアルのステップの全体像
+## 本ステップの全体像
 1. SAP Ariba APIの設定
 2. SAP BTP 上の開発環境のセットアップ
 
 
 ### 1. SAP Ariba APIの設定
 
-
+**TODO**
 
 ### 2. SAP BTP 上の開発環境のセットアップ
 
-1. 講師より提示されたURLを用いて、Web上の開発環境である [SAP Business Application Studio](https://discovery-center.cloud.sap/serviceCatalog/business-application-studio?region=all) にアクセスします。下記スタート画面にて「Create Dev Space」をクリックします。
+1. 講師より提示されたURLを用いて、Web上の開発環境である [SAP Business Application Studio](https://discovery-center.cloud.sap/serviceCatalog/business-application-studio?region=all) にアクセスします。ログインの際には、「Default Identity Provider」を選択します。これにより、SAP Universal IDにて認証が走ります。後続のスタート画面にて「Create Dev Space」をクリックします。
+
+![selectIdP](../../00_Assets/01_setup/00_selectIdP.png)
 
 ![CreateDevSpace](../../00_Assets/01_setup/01_CreateDevSpace.png)
 
@@ -22,12 +24,26 @@
 | Dev Space 名    | ariba_UIExtension   |
 
 ![CreateDevSpace](../../00_Assets/01_setup/02_FullStackCloudApp.png)
+:::
+**INFO**
+[コラム：DevSpaceとは？](../../03_コラム/01_DevSpace.md)
+:::
+:::
+**INFO**
+これはINFOです
+:::
 
 3. SAP Business Application Studio のトップ画面が表示されます。これで開発環境の設定は完了です。
 
 ![BAS_top](../../00_Assets/01_setup/03_BAS_top.png)
 
 
-## <span style="color: pink">次のステップ</span>
+## 次のステップ
 
 [2. バックエンドアプリの構築](../02_バックエンドアプリの構築/README.md)
+
+### 各ステップ リンク一覧
+[1. 開発環境のセットアップ](../01_開発環境のセットアップ/README.md) <br>
+[2. バックエンドアプリの構築](../02_バックエンドアプリの構築/README.md) <br>
+[3. フロントエンドアプリの構築](../03_フロントエンドアプリの構築/README.md) <br>
+[4. デプロイと結果の確認](../04_デプロイと結果の確認/README.md) <br>

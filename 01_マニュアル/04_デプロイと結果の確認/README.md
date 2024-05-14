@@ -99,6 +99,11 @@
 
 ![app](../../00_Assets/04_deploy/12_app.png)
 
-## <span style="color: pink">最初に戻る</span>
-
+## 最初に戻る
 [SAP Ariba x SAP BTP による Side-by-Side拡張 ハンズオン](../../README.md)
+
+### 各ステップ リンク一覧
+[1. 開発環境のセットアップ](../01_開発環境のセットアップ/README.md) <br>
+[2. バックエンドアプリの構築](../02_バックエンドアプリの構築/README.md) <br>
+[3. フロントエンドアプリの構築](../03_フロントエンドアプリの構築/README.md) <br>
+[4. デプロイと結果の確認](../04_デプロイと結果の確認/README.md) <br>
