@@ -28,10 +28,8 @@
 **INFO**
 [コラム：DevSpaceとは？](../../03_コラム/01_DevSpace.md)
 :::
-:::
-**INFO**
-これはINFOです
-:::
+> [!TIP]
+> Optional information to help a user be more successful.
 
 3. SAP Business Application Studio のトップ画面が表示されます。これで開発環境の設定は完了です。
 
