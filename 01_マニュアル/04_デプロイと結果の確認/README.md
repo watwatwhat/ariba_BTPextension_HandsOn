@@ -108,7 +108,7 @@
 
 >[!NOTE]
 > [SAP HTML5 Application Repository](https://discovery-center.cloud.sap/serviceCatalog/html5-application-repository-service?region=all) は SAP BTP 上で提供されているWebサーバのマネージドサービスです。
-> NginxやApacheサーバーを建てることなく、開発したフロントエンドアプリケーションをデプロイすることが可能です。
+> NginxやApacheサーバーを自前で建てることなく、開発したフロントエンドアプリケーションをデプロイすることが可能です。
 
 ![HTML5AppRepo](../../00_Assets/04_deploy/11_HTML5AppRepo.png)
 
