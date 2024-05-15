@@ -16,7 +16,7 @@
 #### デプロイ設定ファイルをご自身用にカスタマイズ
 0. `mta.yaml`内の`sap00`を`<ユーザーID>`に変換してください。
 
-> [!TIPS]
+> [!TIP]
 > sap00 を範囲選択した状態で ctrl + D を押下すると、ファイル内の他のsap00が一つづつ追加で範囲選択されます。<br>
 > 全てのsap00を選択した状態で バックスペース を押下すると全ての街灯部分が削除されます。
 > その状態で <ユーザーID> を入力すると、全ての該当箇所に同時に入力ができます。
@@ -62,7 +62,7 @@
 ![configuredDestination](../../00_Assets/04_deploy/04-4_configuredDestination.png)
 
 
-> [!TIPS]
+> [!TIP]
 > Multi Target Application (MTA) のデプロイアーキテクチャについて、より詳しく知りたい場合は下記をご参照ください。<br>
 > [コラム：デプロイアーキテクチャ](../../03_コラム/デプロイアーキテクチャ.md)
 
@@ -90,7 +90,7 @@
 
 3. 講師の提示した Cloud Foundry スペース (アプリケーションの実行環境) を選択してください。
 
->[!TIPS]
+>[!TIP]
 > 今回は以下に従って環境を選択してください。<br>
 > サブアカウント「btp-enablement-spend-management-be6rsumq」<br>
 > スペース「development」<br>
