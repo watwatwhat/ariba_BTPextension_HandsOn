@@ -11,9 +11,6 @@
 
 SAP BTP は以下の要素から構成されています。<br>
 
-> [!NOTE]
-> 今回は、「BTP Enablement - Spend Management」サブアカウントの「development」スペースに入って開発を行います。
-
 |   項目   |         内容                            |
 | -------------- |--------------------------       |
 | Global Account    |    BTPの契約単位      |
@@ -22,6 +19,9 @@ SAP BTP は以下の要素から構成されています。<br>
 | Space | 実際のアプリケーション開発やデプロイを行う最小単位。例えば DEVスペース、QAスペース、PRODスペース というような使い方も可能 |
 
 ![BTP_AccountHierarchy](../../00_Assets/00_AdminSetup/01_BTP_AccountHierarchy.png)
+
+> [!NOTE]
+> 今回は、「BTP Enablement - Spend Management」サブアカウントの「development」スペースに入って開発を行います。
 
 ### 2. SAP Ariba API 情報の取得
 
