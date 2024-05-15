@@ -23,6 +23,26 @@ SAP BTP は以下の要素から構成されています。<br>
 
 ![BTP_AccountHierarchy](../../00_Assets/00_AdminSetup/01_BTP_AccountHierarchy.png)
 
+### 2. SAP Ariba API 情報の取得
+
+SAP Ariba の API を利用するためには、まず下記 SAP Ariba APIs Portal より、申請が必要です。<br>
+申請を行い承認を得ると、APIを呼び出す際に必要なAPIキーと認証情報を入手できます。<br>
+
+[SAP Ariba APIs Portal](https://developer.ariba.com/)
+
+左側のペインから「Discover」を選択すると、SAP Aribaに用意されたAPIの一覧を閲覧できます。<br>
+ここで、エンドポイントや送付するべきリクエストの形式、また返答されるはずのレスポンススキーマの確認等が可能です。<br>
+
+![AribaAPI_Discover](../../00_Assets/00_AdminSetup/02_AribaAPI_Discover.png)
+
+左側のペインから「Manage」を選択すると、SAP Ariba API と通信するためのアプリケーション登録を申請することが可能です。<br>
+「+」ボタンから新規アプリケーションの申請ができます。<br>
+
+> [!NOTE]
+> ここでの「アプリケーション」というものが、今回構築するアプリケーションだと捉えてください。<br>
+
+![AribaAPI_Manage](../../00_Assets/00_AdminSetup/02_AribaAPI_Manage.png)
+
 ## 次のステップ
 
 [1. 開発環境のセットアップ](../01_開発環境のセットアップ/README.md)
