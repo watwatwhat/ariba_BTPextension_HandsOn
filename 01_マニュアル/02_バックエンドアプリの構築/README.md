@@ -83,7 +83,7 @@ npm install
 
 > [!NOTE]
 > npm は今回用いているNode.jsのパッケージ管理ツールです。<br>
-> このコマンドを実行すると、package.jsonに記載された依存パッケージが一括でインストールされます。
+> npm install を実行すると、同じフォルダ内に存在する package.json に記載された依存パッケージが一括でインストールされます。
 
 ```bash
 cds watch

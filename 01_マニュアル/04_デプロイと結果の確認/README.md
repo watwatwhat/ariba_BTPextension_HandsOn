@@ -8,12 +8,18 @@
 
 ### 1. UI デプロイ設定の追加
 
+> [!WARNING]
 > 下記「Managed Approuter へのデプロイ設定」と「Fiori UIアプリケーションからバックエンドODataサービスへの宛先設定」は、必ず指定の順番で実行してください。<br>
 > 逆に実行すると互いに設定を上書きしてしまい、期待した動作が実行できません。<br>
 > もし逆に実行してしまった場合は、「Fiori UIアプリケーションからバックエンドODataサービスへの宛先設定」を再度実行してください。
 
 #### デプロイ設定ファイルをご自身用にカスタマイズ
 0. `mta.yaml`内の`sap00`を`<ユーザーID>`に変換してください。
+
+> [!TIPS]
+> sap00 を範囲選択した状態で ctrl + D を押下すると、ファイル内の他のsap00が一つづつ追加で範囲選択されます。<br>
+> 全てのsap00を選択した状態で バックスペース を押下すると全ての街灯部分が削除されます。
+> その状態で <ユーザーID> を入力すると、全ての該当箇所に同時に入力ができます。
 
 #### Managed Approuter へのデプロイ設定
 
@@ -56,8 +62,10 @@
 ![configuredDestination](../../00_Assets/04_deploy/04-4_configuredDestination.png)
 
 
-> ここって何をしているの？<br>
-> [デプロイアーキテクチャ](../../03_コラム/デプロイアーキテクチャ.md)
+> [!TIPS]
+> Multi Target Application (MTA) のデプロイアーキテクチャについて、より詳しく知りたい場合は下記をご参照ください。<br>
+> [コラム：デプロイアーキテクチャ](../../03_コラム/デプロイアーキテクチャ.md)
+
 
 ### 2. プロジェクトのビルド
 
@@ -76,11 +84,16 @@
 
 ![deployMTA](../../00_Assets/04_deploy/07_deployMTA.png)
 
-2. 講師の提示した ID/Password を用いて、Cloud Foundry 環境にログインしてください。
+2. 皆様の SAP Universal ID の ID/Password を用いて、Cloud Foundry 環境にログインしてください。
 
 ![cfLogin](../../00_Assets/04_deploy/08_cfLogin.png)
 
 3. 講師の提示した Cloud Foundry スペース (アプリケーションの実行環境) を選択してください。
+
+>[!TIPS]
+> 今回は以下に従って環境を選択してください。<br>
+> サブアカウント「btp-enablement-spend-management-be6rsumq」<br>
+> スペース「development」<br>
 
 ![selectSpace](../../00_Assets/04_deploy/09_selectSpace.png)
 
@@ -91,7 +104,11 @@
 
 ### 4. 結果の確認
 
-1. 講師の提示したURLより、HTML5 Application Repository にアクセスし、「aribareportfe<ユーザーID>」にアクセスします。
+1. 講師の提示したURLより、SAP HTML5 Application Repository にアクセスし、「aribareportfe<ユーザーID>」にアクセスします。
+
+>[!NOTE]
+> [SAP HTML5 Application Repository](https://discovery-center.cloud.sap/serviceCatalog/html5-application-repository-service?region=all) は SAP BTP 上で提供されているWebサーバのマネージドサービスです。
+> NginxやApacheサーバーを建てることなく、開発したフロントエンドアプリケーションをデプロイすることが可能です。
 
 ![HTML5AppRepo](../../00_Assets/04_deploy/11_HTML5AppRepo.png)
 
