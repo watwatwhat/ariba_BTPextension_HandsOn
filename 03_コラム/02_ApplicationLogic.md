@@ -33,8 +33,13 @@
 
 ```mermaid
 graph TD;
+    フロントエンド-->./src/server.js;
     ./src/server.js-->./src/reporting-service.cds;
     ./src/reporting-service.cds-->./src/reporting-service.js;
+    ./src/reporting-service.js-->./srv/lib/ODataRequestHandler.js
+    ./srv/lib/ODataRequestHandler.js-->./srv/external/aribaOpenAPI.js;
+    ./srv/external/aribaOpenAPI.js-->./srv/lib/ODataResponseHandler.js;
+    ./srv/lib/ODataResponseHandler.js-->フロントエンド;
 ```
 
 <details>
@@ -115,6 +120,18 @@ build-parameters:                             # ビルド時のパラメータ
 <details>
 <summary>./srv/server.js</summary>
 このファイルでは、ミドルウェアを実装しています。
+CORSの制限に引っかかることを簡易的に回避しています。本番環境では適切にCORS許容先のドメイン等を設定する必要があります。
+
+```javascript
+"use strict";
+
+const cds = require("@sap/cds"); 
+const cors = require("cors");
+cds.on("bootstrap", app => app.use(cors()));
+
+module.exports = cds.server;
+```
+
 </details>
 
 <details>
