@@ -31,7 +31,7 @@
 
 <details>
 
-<summary>### ./mta.yaml</summary>
+<summary>./mta.yaml</summary>
 
 MTA（Multi Target Application）の設定ファイルです。一部抜粋を記載しており、大枠は以下の通りになっています。
 例えば `module -> aribaOpenAPI_proxy-srv` はNode.jsアプリケーションであり、`aribaOpenAPI_proxy-destination`や`aribaOpenAPI_proxy-auth`というマイクロサービスに依存しています。
@@ -104,22 +104,20 @@ build-parameters:                             # ビルド時のパラメータ
 ```
 </details>
 
-### ./srv/server.js
-
+<details>
+<summary>./srv/server.js</summary>
 このファイルでは、ミドルウェアを実装しています。
+</details>
 
-### ./srv/reporting-service.cds
+<details>
+<summary>./srv/reporting-service.cds</summary>
+SAP Aribaから取得するデータのエンティティとその関連を定義しています。具体的には、購買依頼（C_Requisitions）、購買依頼の承認履歴（C_Requisitions__to_ApprovalRecords）、購買依頼の品目（C_Requisitions__to_LineItems）、請求書（C_Invoices）のエンティティが定義されています。これらのエンティティは読み取り専用であり、それぞれに対してUIアノテーションが付けられています。これにより、各エンティティの表示方法が定義されています。
 
-あああ
 
-### ./srv/reporting-service.js
 
-あああ
+</details>
 
-このタスクはコード生成ではなく、既存のコードの解説を求めています。したがって、コード生成のフォーマットは適用されません。
-
-``と`reporting-service.js`のファイルは、SAP Aribaのデータを取得し、キャッシュし、クライアントに提供するためのサービスを定義しています。
-
-`reporting-service.cds`では、SAP Aribaから取得するデータのエンティティとその関連を定義しています。具体的には、購買依頼（C_Requisitions）、購買依頼の承認履歴（C_Requisitions__to_ApprovalRecords）、購買依頼の品目（C_Requisitions__to_LineItems）、請求書（C_Invoices）のエンティティが定義されています。これらのエンティティは読み取り専用であり、それぞれに対してUIアノテーションが付けられています。これにより、各エンティティの表示方法が定義されています。
-
-一方、`reporting-service.js`では、これらのエンティティに対する操作（特にREAD操作）が定義されています。このファイルでは、SAP Aribaからデータを取得し、一時的にキャッシュする機能が実装されています。また、クライアントからのリクエストに応じて、キャッシュからデータを取得し、必要に応じてフィルタリングやソートを行い、クライアントに返す機能も実装されています。このファイルでは、キャッシュの有効性を確認し、キャッシュが無効な場合や存在しない場合には新たにデータを取得するロジックが含まれています。
+<details>
+<summary>./srv/reporting-service.js</summary>
+カスタムハンドラを定義するファイルです。 `reporting-service.cds` で提供されるエンティティに対する操作（特にREAD操作）が定義されています。このファイルでは、SAP Aribaからデータを取得し、一時的にキャッシュする機能が実装されています。また、クライアントからのリクエストに応じて、キャッシュからデータを取得し、必要に応じてフィルタリングやソートを行い、クライアントに返す機能も実装されています。このファイルでは、キャッシュの有効性を確認し、キャッシュが無効な場合や存在しない場合には新たにデータを取得するロジックが含まれています。
+</details>
