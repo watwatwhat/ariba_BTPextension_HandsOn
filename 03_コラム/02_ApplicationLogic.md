@@ -39,7 +39,8 @@ graph TD;
     ./src/reporting-service.js-->./srv/lib/ODataRequestHandler.js
     ./srv/lib/ODataRequestHandler.js-->./srv/external/aribaOpenAPI.js;
     ./srv/external/aribaOpenAPI.js-->SAP_Ariba_API;
-    SAP_Ariba_API-->./srv/lib/ODataResponseHandler.js;
+    SAP_Ariba_API-->./srv/external/aribaOpenAPI.js;
+    ./srv/external/aribaOpenAPI.js-->./srv/lib/ODataResponseHandler.js;
     ./srv/lib/ODataResponseHandler.js-->./src/reporting-service.js;
     ./src/reporting-service.js-->./src/reporting-service.cds;
     ./src/reporting-service.cds-->./srv/server.js;
