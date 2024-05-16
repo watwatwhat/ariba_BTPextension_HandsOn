@@ -30,115 +30,34 @@
 ## 個別ファイルの役割の解説
 
 ### ./mta.yaml
-MTA（Multi Target Application）の設定ファイルです。大枠は以下の通りになっています。
+MTA（Multi Target Application）の設定ファイルです。一部抜粋を記載しており、大枠は以下の通りになっています。
+例えば `module -> aribaOpenAPI_proxy-srv` はNode.jsアプリケーションであり、`aribaOpenAPI_proxy-destination`や`aribaOpenAPI_proxy-auth`というマイクロサービスに依存しています。
 
 ```yaml
 _schema-version: "3.1"                        # Schemaのバージョンを明記することで、mta.yamlのプロセッサとのバージョンを合わせる
 ID: aribaOpenAPI_proxy                        # SAP BTP, Cloud Foundry Runtime 上で一意となるIDを付与
 description: ariba OpenAPI proxy to OData     # このアプリケーションの説明
 version: 1.0.0                                # このアプリケーションのバージョン
-modules:                                      # このアプリケーションのバージョン
-- name: aribaOpenAPI_proxy-srv
-  type: nodejs
-  path: gen/srv
-  requires:
+modules:                                      # このアプリケーションを構成するモジュール
+- name: aribaOpenAPI_proxy-srv                # サービスモジュールの名前
+  type: nodejs                                # モジュールのタイプ (Node.js)
+  path: gen/srv                               # モジュールのファイルパス
+  requires:                                   # このモジュールが依存するリソース
   - name: aribaOpenAPI_proxy-destination
   - name: aribaOpenAPI_proxy-auth
-  provides:
+  provides:                                   # このモジュールが提供するリソース
   - name: srv-api
     properties:
-      srv-url: ${default-url}
-  parameters:
-    buildpack: nodejs_buildpack
-  build-parameters:
-    builder: npm
-- name: aribaOpenAPI_proxy-app-content
-  type: com.sap.application.content
-  path: .
-  requires:
-  - name: aribaOpenAPI_proxy-repo-host
-    parameters:
-      content-target: true
-  build-parameters:
-    build-result: resources
-    requires:
-    - artifacts:
-      - aribaopenapiuiaribaopenapiuifs.zip
-      name: aribaopenapiuiaribaopenapiuifs
-      target-path: resources/
-    - artifacts:
-      - aribaopenapiuifearibaopenapiuife.zip
-      name: aribaopenapiuifearibaopenapiuife
-      target-path: resources/
-    - artifacts:
-      - aribaopenapiuifemodaribaopenapiuifemod.zip
-      name: aribaopenapiuifemodaribaopenapiuifemod
-      target-path: resources/
-- name: aribaopenapiuiaribaopenapiuifs
-  type: html5
-  path: app/ariba-openapi-ui-fs
-  build-parameters:
-    build-result: dist
-    builder: custom
-    commands:
-    - npm install
-    - npm run build:cf
-    supported-platforms: []
-- name: aribaopenapiuifearibaopenapiuife
-  type: html5
-  path: app/ariba-openapi-ui-fe
-  build-parameters:
-    build-result: dist
-    builder: custom
-    commands:
-    - npm install
-    - npm run build:cf
-    supported-platforms: []
-- name: aribaOpenAPI_proxy-destination-content
-  type: com.sap.application.content
-  requires:
-  - name: aribaOpenAPI_proxy-destination
-    parameters:
-      content-target: true
-  - name: aribaOpenAPI_proxy-repo-host
-    parameters:
-      service-key:
-        name: aribaOpenAPI_proxy-repo-host-key
-  - name: aribaOpenAPI_proxy-auth
-    parameters:
-      service-key:
-        name: aribaOpenAPI_proxy-auth-key
-  parameters:
-    content:
-      instance:
-        destinations:
-        - Name: aribaopenapi_aribaOpenAPI_proxy_repo_host
-          ServiceInstanceName: aribaOpenAPI_proxy-html5-srv
-          ServiceKeyName: aribaOpenAPI_proxy-repo-host-key
-          sap.cloud.service: aribaopenapi
-        - Authentication: OAuth2UserTokenExchange
-          Name: aribaopenapi_aribaOpenAPI_proxy_auth
-          ServiceInstanceName: aribaOpenAPI_proxy-auth
-          ServiceKeyName: aribaOpenAPI_proxy-auth-key
-          sap.cloud.service: aribaopenapi
-        existing_destinations_policy: ignore
-  build-parameters:
-    no-source: true
-- name: aribaopenapiuifemodaribaopenapiuifemod
-  type: html5
-  path: app/ariba-openapi-ui-fe-mod
-  build-parameters:
-    build-result: dist
-    builder: custom
-    commands:
-    - npm install
-    - npm run build:cf
-    supported-platforms: []
-resources:
-- name: aribaOpenAPI_proxy-destination
-  type: org.cloudfoundry.managed-service
-  parameters:
-    config:
+      srv-url: ${default-url}                 # プロパティの定義
+  parameters:                                 # モジュールに関するパラメータ
+    buildpack: nodejs_buildpack               # 使用するビルドパック
+  build-parameters:                           # ビルド時のパラメータ
+    builder: npm                              # 使用するビルダー (npm)
+resources:                                    # アプリケーションが依存するリソース
+- name: aribaOpenAPI_proxy-destination        # リソースの名前
+  type: org.cloudfoundry.managed-service      # リソースのタイプ (Managed Service)
+  parameters:                                 # リソースに関するパラメータ
+    config:                                   # リソースの設定
       HTML5Runtime_enabled: true
       init_data:
         instance:
@@ -150,38 +69,33 @@ resources:
             ProxyType: Internet
             Type: HTTP
             URL: ~{srv-api/srv-url}
-          - Authentication: NoAuthentication
-            Name: ui5
-            ProxyType: Internet
-            Type: HTTP
-            URL: https://ui5.sap.com
           existing_destinations_policy: update
-    service: destination
-    service-plan: lite
-  requires:
+    service: destination                      # 使用するサービス (destination)
+    service-plan: lite                        # サービスプラン (lite)
+  requires:                                   # このリソースが依存するリソース
   - name: srv-api
-- name: aribaOpenAPI_proxy-auth
-  type: org.cloudfoundry.managed-service
-  parameters:
-    config:
+- name: aribaOpenAPI_proxy-auth               # リソースの名前
+  type: org.cloudfoundry.managed-service      # リソースのタイプ (Managed Service)
+  parameters:                                 # リソースに関するパラメータ
+    config:                                   # リソースの設定
       tenant-mode: dedicated
       xsappname: aribaOpenAPI_proxy-${org}-${space}
     path: ./xs-security.json
-    service: xsuaa
-    service-plan: application
-- name: aribaOpenAPI_proxy-repo-host
-  type: org.cloudfoundry.managed-service
-  parameters:
-    service: html5-apps-repo
+    service: xsuaa                            # 使用するサービス (xsuaa)
+    service-plan: application                 # サービスプラン (application)
+- name: aribaOpenAPI_proxy-repo-host          # リソースの名前
+  type: org.cloudfoundry.managed-service      # リソースのタイプ (Managed Service)
+  parameters:                                 # リソースに関するパラメータ
+    service: html5-apps-repo                  # 使用するサービス (html5-apps-repo)
     service-name: aribaOpenAPI_proxy-html5-srv
-    service-plan: app-host
-parameters:
-  deploy_mode: html5-repo
-  enable-parallel-deployments: true
-build-parameters:
-  before-all:
-  - builder: custom
-    commands:
+    service-plan: app-host                    # サービスプラン (app-host)
+parameters:                                   # アプリケーション全体に関するパラメータ
+  deploy_mode: html5-repo                     # デプロイモード (html5-repo)
+  enable-parallel-deployments: true           # 並行デプロイを有効にする
+build-parameters:                             # ビルド時のパラメータ
+  before-all:                                 # 全ビルド前に実行するパラメータ
+  - builder: custom                           # 使用するビルダー (カスタム)
+    commands:                                 # 実行するコマンド
     - npx cds build --production
 
 ```
