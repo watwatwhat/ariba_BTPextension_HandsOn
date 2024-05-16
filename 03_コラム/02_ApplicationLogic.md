@@ -29,7 +29,10 @@
 
 ## 個別ファイルの役割の解説
 
-### ./mta.yaml
+<details>
+
+<summary>### ./mta.yaml</summary>
+
 MTA（Multi Target Application）の設定ファイルです。一部抜粋を記載しており、大枠は以下の通りになっています。
 例えば `module -> aribaOpenAPI_proxy-srv` はNode.jsアプリケーションであり、`aribaOpenAPI_proxy-destination`や`aribaOpenAPI_proxy-auth`というマイクロサービスに依存しています。
 
@@ -99,6 +102,7 @@ build-parameters:                             # ビルド時のパラメータ
     - npx cds build --production
 
 ```
+</details>
 
 ### ./srv/server.js
 
