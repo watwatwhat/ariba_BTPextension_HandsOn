@@ -1,4 +1,4 @@
-# SAP Business Application StudioのDevSpaceの概念
+# SAP Business Application Studio - DevSpace の概念
 
 ## 概要
 SAP Business Application Studio（BAS）のDevSpaceは、開発者が特定の開発シナリオに必要なツールやリソースを集約したクラウドベースの開発環境です。DevSpaceを使用することで、ユーザーは迅速に開発作業を開始でき、効率的にアプリケーションの開発が進められます。
