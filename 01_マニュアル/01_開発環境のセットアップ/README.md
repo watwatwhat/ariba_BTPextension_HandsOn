@@ -29,7 +29,7 @@ SAP Ariba API からの認証情報の取得やAPI利用の有効化について
 ![CreateDevSpace](../../00_Assets/01_setup/02_FullStackCloudApp.png)
 
 > [!TIP]
-> DevSpaceについて、より詳しく知りたい場合は下記をご参照ください。
+> DevSpaceについて、より詳しく知りたい場合は下記をご参照ください。<br>
 > [コラム：DevSpaceとは？](../../03_コラム/01_DevSpace.md) 
 
 3. SAP Business Application Studio のトップ画面が表示されます。これで開発環境の設定は完了です。
