@@ -29,12 +29,12 @@
 
 ## 個別ファイルの役割の解説
 
-全体としてのCAPの挙動としては、
+全体の挙動としては、
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
+    ./src/server.js-->./src/reporting-service.cds;
+    ./src/reporting-service.cds-->./src/reporting-service.js;
 ```
 
 <details>
