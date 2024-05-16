@@ -29,7 +29,7 @@
 
 ## 個別ファイルの役割の解説
 
-全体の挙動としては、
+全体の挙動としては、下記のダイアグラムの通りとなります。
 
 ```mermaid
 graph TD;
@@ -38,8 +38,13 @@ graph TD;
     ./src/reporting-service.cds-->./src/reporting-service.js;
     ./src/reporting-service.js-->./srv/lib/ODataRequestHandler.js
     ./srv/lib/ODataRequestHandler.js-->./srv/external/aribaOpenAPI.js;
-    ./srv/external/aribaOpenAPI.js-->./srv/lib/ODataResponseHandler.js;
-    ./srv/lib/ODataResponseHandler.js-->フロントエンド;
+    ./srv/external/aribaOpenAPI.js-->SAP Ariba API;
+    SAP Ariba API-->./srv/lib/ODataResponseHandler.js;
+    ./srv/lib/ODataResponseHandler.js-->./src/reporting-service.js;
+    ./src/reporting-service.js-->./srv/lib/ODataResponseHandler.js;
+    ./srv/lib/ODataResponseHandler.js-->./src/reporting-service.cds;
+    ./src/reporting-service.cds-->./srv/server.js;
+    ./srv/server.js-->フロントエンド;
 ```
 
 <details>
