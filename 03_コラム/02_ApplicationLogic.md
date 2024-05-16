@@ -29,6 +29,14 @@
 
 ## 個別ファイルの役割の解説
 
+全体としてのCAPの挙動としては、
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+```
+
 <details>
 
 <summary>./mta.yaml</summary>
