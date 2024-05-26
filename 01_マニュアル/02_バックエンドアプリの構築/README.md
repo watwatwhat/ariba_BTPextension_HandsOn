@@ -2,6 +2,7 @@
 
 > [!NOTE]
 > 本ステップでは、下図赤枠の部分について実装を行います。<br>
+> <br>
 > ![backendArchitecture](../../00_Assets/02_backend/00_architecture.png)
 
 ## 本マニュアルのステップの全体像
