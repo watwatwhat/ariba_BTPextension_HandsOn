@@ -1,6 +1,8 @@
 # 3. フロントエンドアプリの構築
 
+> [!NOTE]
 > 本ステップでは、下図赤枠の部分について実装を行います。
+> <br>
 > ![frontendArchitecture](../../00_Assets/03_frontend/00_architecture.png)
 
 
