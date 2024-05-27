@@ -77,7 +77,7 @@
 
 > [!TIP]
 > 「Application Info」の画面を閉じてしまった場合、もしくは自動で開かない場合は、以下のように開いてください。<br>
-> ./app/ariba-report-fe-<ユーザーID> 上で右クリック<br>
+> `./app/ariba-report-fe-<ユーザーID>` 上で右クリック -> 「Open Application Info」をクリック <br>
 > <br>
 > ![noApplicationInfo](../../00_Assets/04_deploy/90_if_noApplicationInfo.png)
 
