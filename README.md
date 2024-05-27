@@ -74,3 +74,6 @@
 
 ## 終わりに
 このハンズオンを通じて、SAP AribaとSAP BTPを活用した拡張開発の基本を理解し、実際のプロジェクトに応用できる知識と経験を得ることができます。
+
+#### 制作
+[![https://img.shields.io/badge/SAP%20Community-takayuki_tanaka-blue](https://img.shields.io/badge/SAP%20Community-takayuki_tanaka-blue)](https://community.sap.com/t5/user/viewprofilepage/user-id/109430)
