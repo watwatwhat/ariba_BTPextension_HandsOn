@@ -28,7 +28,7 @@ SAP Ariba API からの認証情報の取得やAPI利用の有効化について
 
 ![CreateDevSpace](../../00_Assets/01_setup/02_FullStackCloudApp.png)
 
-> [!TIP]
+> [!NOTE]
 > DevSpaceについて、より詳しく知りたい場合は下記をご参照ください。<br>
 > [コラム：DevSpaceとは？](../../03_コラム/01_DevSpace.md) 
 

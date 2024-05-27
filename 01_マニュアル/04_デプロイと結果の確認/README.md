@@ -41,6 +41,11 @@
 
 ![approuterConfig](../../00_Assets/04_deploy/03_approuterConfig.png)
 
+> [!NOTE]
+> この作業により、Managed Approuterを利用するという設定が行われました。<br>
+> 「Managed Approuter」とは何か？なぜ必要なのか？について、より詳しく知りたい場合は下記をご参照ください。<br>
+> [コラム：Managed Approuter](../../03_コラム/04_managedApprouter.md)
+
 4. デプロイに関する設定ファイルである `mta.yaml` に UI デプロイに関わる情報が付加されます。
 
 ![mtaUpdated](../../00_Assets/04_deploy/04_mtaUpdated_zoomout.png)
@@ -69,7 +74,7 @@
 ![configuredDestination](../../00_Assets/04_deploy/04-4_configuredDestination.png)
 
 
-> [!TIP]
+> [!NOTE]
 > Multi Target Application (MTA) のデプロイアーキテクチャについて、より詳しく知りたい場合は下記をご参照ください。<br>
 > [コラム：デプロイアーキテクチャ](../../03_コラム/03_DeployArchitecture.md)
 
