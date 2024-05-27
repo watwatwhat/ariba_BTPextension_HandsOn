@@ -27,6 +27,11 @@
 
 ![openFolder](../../00_Assets/02_backend/02_openFolder.png)
 
+> [!TIP]
+> 「開く」以外をクリックしてしまった場合は、左上のハンバーガーメニューから「Files」->「Open Folder」をクリックし、「ariba_BTPextensionHandsOn_src」を選択して「OK」をクリックしてください。<br>
+> <br>
+> ![backendArchitecture](../../00_Assets/02_backend/90_if_failToOpenWorkspace.png)
+
 4. プロジェクトがクローンされたことが確認できます。
 
 ![clonedDir](../../00_Assets/02_backend/03_clonedDir.png)
@@ -96,6 +101,11 @@ cds watch
 > このコマンドを実行するとCAPサーバーがローカル（今回はSAP Business Applciation StudioのDevSpace内）で立ち上がります。
 
 ![command](../../00_Assets/02_backend/06_command.png)
+
+> [!TIP]
+> コマンドにより出現した、「A service is listening to port 4004.」のポップアップが消えてしまった場合は、ctrlキーを押しながら「 http://localhost:4004 」をクリックすることでもプレビュー画面を開くことができます。<br>
+> <br>
+> ![backendArchitecture](../../00_Assets/02_backend/91_if_failToOpenPreview.png)
 
 3. CAPサーバーの画面が立ち上がります。この画面では、ソースコード内でODataエンティティとして定義されているデータの一覧が表示されています。メインのエンティティである「C_Requisitions」をクリックしてください。
 

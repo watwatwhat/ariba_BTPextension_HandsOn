@@ -54,6 +54,7 @@
 | Minimum SAPUI5 version   | 1.120.4   |
 | Add deployment...   | Yes   |
 | Add FLP configration   | No   |
+| Advanced configration   | No   |
 
 ![attributes](../../00_Assets/03_frontend/05_attributes.png)
 
@@ -64,11 +65,21 @@
 | Please choose the target    | Cloud Foundry            |
 | Destination name            | None                     |
 
+> [!WARNING]
+> 「Finish」をクリックすると、フロントエンドアプリケーション (UI) の自動生成が始まります。<br>
+> 「Files have been generated.」のポップアップが出るまで、画面は操作せずに待機してください。<br>
+
 ![deployConf](../../00_Assets/03_frontend/06_deployConf_none.png)
 
 6. `./app` 配下にフロントエンドのアプリケーションが生成されます。
 
 ![fioriDashboard](../../00_Assets/03_frontend/07_fioriDashboard.png)
+
+> [!TIP]
+> 「Application Info」の画面を閉じてしまった場合、もしくは自動で開かない場合は、以下のように開いてください。<br>
+> ./app/ariba-report-fe-<ユーザーID> 上で右クリック<br>
+> <br>
+> ![noApplicationInfo](../../00_Assets/04_deploy/90_if_noApplicationInfo.png)
 
 7. この状態で先ほどのプレビューを開くと、「Web Applications」の部分に `/ariba-report-fe-<ユーザー名>/webapp/index.html` が表示されているはずです。こちらをクリックしてください。
 

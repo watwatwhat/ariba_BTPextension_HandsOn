@@ -51,6 +51,13 @@
 
 ![addDeployConfig](../../00_Assets/04_deploy/04-1_addDeployConfig.png)
 
+> [!TIP]
+> 「Application Info」の画面を閉じてしまった場合は、以下のように開いてください。<br>
+> ./app/ariba-report-fe-<ユーザーID> 上で右クリック<br>
+> <br>
+> ![noApplicationInfo](../../00_Assets/04_deploy/90_if_noApplicationInfo.png)
+
+
 6. ローカルのCAPプロジェクトにより提供されるODataサービスをポイントします。
 
 ![pointToLocalCAP](../../00_Assets/04_deploy/04-2_pointToLocalCAP.png)
