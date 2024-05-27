@@ -85,6 +85,16 @@
 
 ![webApp](../../00_Assets/03_frontend/08_webApp.png)
 
+> [!TIP]
+> 必要に応じて、以下コマンドを用いてアプリケーションのプレビューを再起動してください。<br>
+> ```bash
+> cds watch
+> ``` 
+> 以下の図のようなエラーが出た場合は、先ほど立ち上げたプレビューアプリケーションが安全にシャットダウンされていないことを意味しています。
+> Enterキーを押すと他のポートで新しくプレビューアプリケーションを起動できます。<br>
+> <br>
+> ![portAlreadyTaken](../../00_Assets/03_frontend/90_if_portAlreadyTaken.png)
+
 8. 半自動で生成された Fiori アプリケーションが確認できます。「開始」ボタンをクリックすると、バックエンドアプリがSAP Aribaからのデータを収集し、Fioriアプリが扱える OData (もどき) の形に整形してフロントエンドに送信します。これにより、Fiori の画面で SAP Ariba のデータを確認することが可能です。
 
 ![aribaReport](../../00_Assets/03_frontend/09_aribaReport.png)
