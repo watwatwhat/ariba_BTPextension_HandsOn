@@ -4,14 +4,14 @@
 このドキュメントでは、SAP AribaとSAP Business Technology Platform (BTP) を用いたSide-by-Side拡張のハンズオンについて解説を行います。
 
 > [!WARNING]
-> 免責事項 <br>
+> **免責事項** <br>
 > 本コンテンツを利用することにより、利用者は下記の免責事項に同意したものとみなします。<br>
-> 1. 教育目的のみの使用: 本コンテンツは教育目的のみに提供され、他の目的での使用は禁止されています。他の用途で利用した帰結についての責任は一切負えません。<br>
-> 2. 正確性の保証の否認: 本コンテンツの作成には細心の注意を払っておりますが、情報の正確性や完全性を保証するものではありません。本コンテンツを使用することによって発生した直接的または間接的な損害について、当方は一切の責任を負いません。<br>
-> 3. 結果の保証の否認: 本コンテンツを使用したことによる学習効果やその他の成果に関して、いかなる保証も行いません。<br>
-> 4. 第三者のリンク: 本コンテンツには外部の第三者が提供する情報へのリンクが含まれる場合がありますが、これらのサイトの内容について当方は責任を負いません。<br>
-> 5. 知的財産権: 本コンテンツに含まれる情報、ロゴ、画像などは法的に保護されており、無断での複製、配布、公開は禁じられています。<br>
-> 6. 利用条件の変更: 当方は予告なしに本免責事項を変更する権利を有します。本ページの利用条件が変更された場合、利用者は変更された条件に拘束されるものとします。<br>
+> - **教育目的のみの使用** : 本コンテンツは教育目的のみに提供され、他の目的での使用は禁止されています。他の用途で利用した帰結についての責任は一切負えません。<br>
+> - **正確性の保証の否認** : 本コンテンツの作成には細心の注意を払っておりますが、情報の正確性や完全性を保証するものではありません。本コンテンツを使用することによって発生した直接的または間接的な損害について、当方は一切の責任を負いません。<br>
+> - **結果の保証の否認** : 本コンテンツを使用したことによる学習効果やその他の成果に関して、いかなる保証も行いません。<br>
+> - **第三者のリンク** : 本コンテンツには外部の第三者が提供する情報へのリンクが含まれる場合がありますが、これらのサイトの内容について当方は責任を負いません。<br>
+> - **知的財産権** : 本コンテンツに含まれる情報、ロゴ、画像などは法的に保護されており、無断での複製、配布、公開は禁じられています。<br>
+> - **利用条件の変更** : 当方は予告なしに本免責事項を変更する権利を有します。本ページの利用条件が変更された場合、利用者は変更された条件に拘束されるものとします。<br>
 
 
 ## 拡張開発シナリオ 概要
@@ -74,16 +74,3 @@
 
 ## 終わりに
 このハンズオンを通じて、SAP AribaとSAP BTPを活用した拡張開発の基本を理解し、実際のプロジェクトに応用できる知識と経験を得ることができます。
-
-
-## 参考文献のご紹介
-
-| サイト名        | 概要 |  URL   |
-| -------------- | ---- |------- |
-| CAPire | SAP CAP 公式ドキュメント |https://cap.cloud.sap/docs/get-started/hello-world |
-| SAP Discovery Center : SAP Business Application Studio | SAP BTP サービスに関する概要や各種リファレンスへのリンク等 | https://discovery-center.cloud.sap/serviceCatalog/business-application-studio?region=all |
-| SAP Discovery Center : SAP BTP, Cloud Foundry Runtime | SAP BTP サービスに関する概要や各種リファレンスへのリンク等 | https://discovery-center.cloud.sap/serviceCatalog/cloud-foundry-runtime?region=all |
-| SAP Discovery Center : SAP HTML5 Application Repository Service for SAP BTP | SAP BTP サービスに関する概要や各種リファレンスへのリンク等 | https://discovery-center.cloud.sap/serviceCatalog/html5-application-repository-service?region=all |
-| SAP Discovery Center : SAP Build Work Zone, standard edition | SAP BTP サービスに関する概要や各種リファレンスへのリンク等 | https://discovery-center.cloud.sap/serviceCatalog/sap-build-work-zone-standard-edition?region=all |
-| SAP Discovery Center : SAP Authorization and Trust Management Service (XSUAA) | SAP BTP サービスに関する概要や各種リファレンスへのリンク等 | https://discovery-center.cloud.sap/serviceCatalog/authorization-and-trust-management-service?region=all |
-| SAP Discovery Center : Destination | SAP BTP サービスに関する概要や各種リファレンスへのリンク等 | https://discovery-center.cloud.sap/serviceCatalog/destination?service_plan=lite&region=all&commercialModel=btpea |
