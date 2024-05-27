@@ -72,6 +72,13 @@
 
 
 ## 参考文献のご紹介
-| サイト名        |   URL   |
-| -------------- | ------- |
-| CAP 公式ドキュメント: CAPire | https://cap.cloud.sap/docs/get-started/hello-world |
+
+| サイト名        | 概要 |  URL   |
+| -------------- | ---- |------- |
+| CAPire | SAP CAP 公式ドキュメント |https://cap.cloud.sap/docs/get-started/hello-world |
+| SAP Discovery Center : SAP Business Application Studio | SAP BTP サービスに関する概要や各種リファレンスへのリンク等 | https://discovery-center.cloud.sap/serviceCatalog/business-application-studio?region=all |
+| SAP Discovery Center : SAP BTP, Cloud Foundry Runtime | SAP BTP サービスに関する概要や各種リファレンスへのリンク等 | https://discovery-center.cloud.sap/serviceCatalog/cloud-foundry-runtime?region=all |
+| SAP Discovery Center : SAP HTML5 Application Repository Service for SAP BTP | SAP BTP サービスに関する概要や各種リファレンスへのリンク等 | https://discovery-center.cloud.sap/serviceCatalog/html5-application-repository-service?region=all |
+| SAP Discovery Center : SAP Build Work Zone, standard edition | SAP BTP サービスに関する概要や各種リファレンスへのリンク等 | https://discovery-center.cloud.sap/serviceCatalog/sap-build-work-zone-standard-edition?region=all |
+| SAP Discovery Center : SAP Authorization and Trust Management Service (XSUAA) | SAP BTP サービスに関する概要や各種リファレンスへのリンク等 | https://discovery-center.cloud.sap/serviceCatalog/authorization-and-trust-management-service?region=all |
+| SAP Discovery Center : Destination | SAP BTP サービスに関する概要や各種リファレンスへのリンク等 | https://discovery-center.cloud.sap/serviceCatalog/destination?service_plan=lite&region=all&commercialModel=btpea |
