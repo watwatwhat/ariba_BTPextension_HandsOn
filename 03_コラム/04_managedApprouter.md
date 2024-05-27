@@ -16,6 +16,8 @@
 - 自己管理型のルーティングコンポーネントで、任意のインフラストラクチャ上で実行可能です。実体はNode.jsのアプリケーションです。
 - より高いカスタマイズ性と制御が可能で、独自のセキュリティポリシーを設定することができます。
 - 開発者はアプリケーションだけでなく、Approuterの運用および管理にも責任を持つ必要があります。
+- Standalone Approuter パッケージのソースコードは下記をご参照ください。
+  - [@sap/approuter][https://www.npmjs.com/package/@sap/approuter]
 
 
 ## HTML5 Application Repository との関係性
