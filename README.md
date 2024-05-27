@@ -37,7 +37,7 @@
 
 > [!TIP]
 > SAP BTP に触るのが初めての方は、下記単語集を手の届くところに置いておくと便利かもしれません。<br>
-> [今回出現する SAP BTP の用語集](./HELPER.md)
+> [本ハンズオンで登場する SAP BTP の用語集](./HELPER.md)
 
 
 ## 実装アーキテクチャ
@@ -75,5 +75,5 @@
 ## 終わりに
 このハンズオンを通じて、SAP AribaとSAP BTPを活用した拡張開発の基本を理解し、実際のプロジェクトに応用できる知識と経験を得ることができます。
 
-#### 制作
+
 [![https://img.shields.io/badge/SAP%20Community-takayuki_tanaka-blue](https://img.shields.io/badge/SAP%20Community-takayuki_tanaka-blue)](https://community.sap.com/t5/user/viewprofilepage/user-id/109430)
