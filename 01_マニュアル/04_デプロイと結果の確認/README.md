@@ -46,6 +46,11 @@
 > 「Managed Approuter」とは何か？なぜ必要なのか？について、より詳しく知りたい場合は下記をご参照ください。<br>
 > [コラム：Managed Approuter](../../03_コラム/04_managedApprouter.md)
 
+> [!NOTE]
+> ここで、XSUAAサービスやDestinationサービスというマイクロサービスが、本アプリケーションにバインドされています。<br>
+> これらについてより詳しく知りたい場合は下記をご参照ください。<br>
+> [コラム：XSUAAサービス / Destinationサービス ](../../03_コラム/06_XSUAA_Destination.md) 
+
 4. デプロイに関する設定ファイルである `mta.yaml` に UI デプロイに関わる情報が付加されます。
 
 ![mtaUpdated](../../00_Assets/04_deploy/04_mtaUpdated_zoomout.png)

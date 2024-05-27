@@ -97,6 +97,10 @@
 
 8. 半自動で生成された Fiori アプリケーションが確認できます。「開始」ボタンをクリックすると、バックエンドアプリがSAP Aribaからのデータを収集し、Fioriアプリが扱える OData (もどき) の形に整形してフロントエンドに送信します。これにより、Fiori の画面で SAP Ariba のデータを確認することが可能です。
 
+> [!NOTE]
+> ODataについて、より詳しく知りたい場合は下記をご参照ください。<br>
+> [コラム：OData API とは？](../../03_コラム/05_OData.md) 
+
 ![aribaReport](../../00_Assets/03_frontend/09_aribaReport.png)
 
 
