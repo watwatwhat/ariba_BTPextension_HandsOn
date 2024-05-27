@@ -1,0 +1,3 @@
+[submodule "02_sourceCode"]
+	path = 02_sourceCode
+	url = https://github.com/watwatwhat/ariba_BTPextension_HandsOn_src.git
