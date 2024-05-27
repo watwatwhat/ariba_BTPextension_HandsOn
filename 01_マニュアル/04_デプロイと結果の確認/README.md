@@ -78,6 +78,10 @@
 
 1. `mta.yaml` ファイル上で右クリックをしてください。表示されるメニューのうち「 Build MTA Project 」をクリックします。
 
+> [!WARNING]
+> 自動で新規ターミナルが生成され、一連のビルド作業が実行されます。
+> 「Terminal will be reused by tasks, press any key to close it.」と表示されるまで、**ターミナルには触れずに待機**してください。<br>
+
 ![buildMTA](../../00_Assets/04_deploy/05_buildMTA.png)
 
 2. `mta_archives/aribaOpenAPI_proxy-<ユーザーID>_1.0.0.mtar` が生成されます。
@@ -99,8 +103,14 @@
 
 >[!TIP]
 > 今回は以下に従って環境を選択してください。<br>
+> 
 > サブアカウント「btp-enablement-spend-management-be6rsumq」<br>
 > スペース「development」<br>
+
+> [!WARNING]
+> 「Apply」をクリックすると、自動で新規ターミナルが生成され、一連のデプロイ作業が実行されます。
+> この作業は **2~5分程度** かかります。
+> 「Terminal will be reused by tasks, press any key to close it.」と表示されるまで、**ターミナルには触れずに待機**してください。<br>
 
 ![selectSpace](../../00_Assets/04_deploy/09_selectSpace.png)
 
