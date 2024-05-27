@@ -1,7 +1,7 @@
 ## XSUAAサービス (XS Advanced User Authentication and Authorization)
 
 ### 概要
-- **XSUAA** は、SAP BTP上でアプリケーションのセキュリティを管理するためのサービスです。
+- **XSUAAサービス** は、SAP BTP上でアプリケーションのセキュリティを管理するためのサービスです。
 - 認証と承認の機能を提供し、セキュリティトークンサービスとして機能します。
 
 ![MTA](../00_Assets/99_Column/06_XSUAA.png)

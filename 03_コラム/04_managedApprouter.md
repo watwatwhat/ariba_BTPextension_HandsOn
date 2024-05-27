@@ -20,10 +20,10 @@
   - [ @sap/approuter | npm ](https://www.npmjs.com/package/@sap/approuter)
 
 
-## HTML5 Application Repository との関係性
+## SAP HTML5 Application Repository Service for SAP BTP との関係性
 
-- **HTML5 Application Repository** は、HTML5アプリケーションのストレージおよびデプロイメントを管理するためのWebサーバーサービスです。
-- Managed Approuter を利用することで、HTML5 Application Repository に保存されたアプリケーションへのエンドユーザーのアクセスをセキュアに制御できます。
+- **SAP HTML5 Application Repository Service for SAP BTP** は、HTML5アプリケーションのストレージおよびデプロイメントを管理するためのWebサーバーサービスです。
+- Managed Approuter を利用することで、SAP HTML5 Application Repository Service for SAP BTP に保存されたアプリケーションへのエンドユーザーのアクセスをセキュアに制御できます。
 - アプリケーションの配布とアクセス管理がシンプルかつ効率的になり、セキュリティリスクの軽減が可能になります。
 
 ## SAP Build Work Zone との関係性
