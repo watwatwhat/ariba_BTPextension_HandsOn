@@ -4,8 +4,8 @@
 
 | 用語                                 | 説明                                             | 追加資料 |
 |--------------------------------------|--------------------------------------------------|----------|
-| SAP Business Technology Platform (BTP) | 統合的なエンタープライズ開発と実行プラットフォーム       | [本編マニュアル](./01_マニュアル/00_環境管理者セットアップ/.md)      |
-| SAP BTP Cockpit         | SAP BTPの管理とモニタリングを行うためのWebベースユーザーインターフェース                   | なし   |
+| SAP Business Technology Platform (BTP) | 統合的なエンタープライズ開発と実行プラットフォーム       | [本編マニュアル](./01_マニュアル/00_環境管理者セットアップ/README.md)      |
+| SAP BTP Cockpit         | SAP BTPの管理とモニタリングを行うためのWebベースユーザーインターフェース <br> ここからSAP BTP上の各アプリケーションやサービスを利用登録する                   | なし   |
 | SAP CAP (Cloud Application Programming model)  | フルスタックアプリケーション開発フレームワーク       | [ドキュメント](https://cap.cloud.sap/docs/get-started/hello-world)      |
 | Multi Target Application (MTA)       | 複数のマイクロコンポーネントから構成されるアプリを束ねたパッケージの形式 | なし      |
 | Managed / Standalone approuter       | アプリケーションルーティングと認証機能を提供するミドルウェア | [コラム](./03_コラム/04_managedApprouter.md)      |
