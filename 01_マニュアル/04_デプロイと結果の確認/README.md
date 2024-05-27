@@ -49,7 +49,7 @@
 > [!NOTE]
 > ここで、XSUAAサービスやDestinationサービスというマイクロサービスが、本アプリケーションにバインドされています。<br>
 > これらについてより詳しく知りたい場合は下記をご参照ください。<br>
-> [コラム：XSUAAサービス / Destinationサービス ](../../03_コラム/06_XSUAA_Destination.md) 
+> [コラム：XSUAAサービス / Destinationサービス ](../../03_コラム/06_XSUAA_Destination.md)
 
 4. デプロイに関する設定ファイルである `mta.yaml` に UI デプロイに関わる情報が付加されます。
 
