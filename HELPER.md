@@ -7,7 +7,7 @@
 | SAP Business Technology Platform (BTP) | 統合的なエンタープライズ開発と実行プラットフォーム       | [本編マニュアル](./01_マニュアル/00_環境管理者セットアップ/README.md)      |
 | SAP BTP Cockpit         | SAP BTPの管理とモニタリングを行うためのWebベースユーザーインターフェース <br> ここからSAP BTP上の各アプリケーションやサービスを利用登録する                   | なし   |
 | SAP CAP (Cloud Application Programming model)  | フルスタックアプリケーション開発フレームワーク       | [ドキュメント](https://cap.cloud.sap/docs/get-started/hello-world) <br> [コラム](./03_コラム/08_CAP.md)     |
-| Multi Target Application (MTA)       | 複数のマイクロコンポーネントから構成されるアプリを束ねたパッケージの形式 | なし      |
+| Multi Target Application (MTA)       | 複数のマイクロコンポーネントから構成されるアプリを束ねたパッケージの形式 | [コラム](./03_コラム/03_DeployArchitecture.md)      |
 | Managed / Standalone approuter       | アプリケーションルーティングと認証機能を提供するミドルウェア | [コラム](./03_コラム/04_managedApprouter.md)      |
 | XSUAA Service                                | セキュリティサービスで、認証と権限付与を管理      | [コラム](./03_コラム/06_XSUAA_Destination.md) <br> [SAP Discovery Center](https://discovery-center.cloud.sap/serviceCatalog/authorization-and-trust-management-service?region=all) |
 | Destination                    | ネットワーク接続先の設定情報を管理                | [コラム](./03_コラム/06_XSUAA_Destination.md) <br> [SAP Discovery Center](https://discovery-center.cloud.sap/serviceCatalog/authorization-and-trust-management-service?region=all)      |
@@ -32,3 +32,4 @@
 | ビルド                               | ソースコードから直接コンピュータが実行可能なアプリケーションを生成すること  | なし      |
 | npmコマンド                          | Node.jsのパッケージ管理と配布を行うツールとその操作を行うコマンド   | なし      |
 | cdsコマンド                          | CAPプロジェクトの操作に使用するツールとその操作を行うコマンド       | なし      |
+| package.json                          | Node.jsで作成されたアプリの設定や依存関係を書き込むファイル       | なし      |

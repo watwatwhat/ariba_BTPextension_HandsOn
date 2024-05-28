@@ -38,24 +38,28 @@
 
 このプロジェクトのディレクトリ構成は以下の通りです。
 
-| ディレクトリ | | 内容 |
-| ---------------------- | ---- | ------------------------ |
-| `./app`               | | UIフロントエンドのソースコード(フロントエンド本体) |
-| `./db`                | | アプリ内で利用されるドメインモデルとデータ |
-|  | `/data-model.cds` | ドメインモデル |
-| `./srv`               | | アプリ内で利用されるサービスモデルとカスタムハンドラ(バックエンド本体) |
-|  | `/server.js` | CORS設定をコントロールするミドルウェアを実装 |
-|  | `/reporting-service.cds` | サービスモデル |
-|  | `/reporting-service.js` | カスタムハンドラ |
-|  | `/external/aribaOpenAPI.js` | AribaのAPIを呼び出すカスタムモジュール |
-|  | `/lib/designTimeTools.js` | コーディング時に利用するカスタムモジュール |
-|  | `/lib/ODataRequestHandler.js` | フロントエンドからのODataクエリをパースするカスタムモジュール |
-|  | `/lib/ODataResponseHandler.js` | フロントエンドへのODataレスポンスを$selectや$orderbyにより調整するカスタムモジュール |
-| `./xs-security.json`       | | アプリを利用するために必要な権限ロールの設定 |
-| `./mta.yaml`           | | Multi Target Application (mta) : BTP上のマイクロサービスを横断・統合したデプロイ設定 |
-| `./package.json`       | | プロジェクトのメタデータと設定 |
-| `./README.md`          | | 本スタートガイド |
+```tree
+.
+└── ariba_BTPextensionHandsOn_src/          ルートディレクトリ
+    ├── app/                                UIフロントエンドのソースコード(フロントエンド本体)
+    ├── db/                                 アプリ内で利用されるドメインモデルとデータ
+    │   └── data-model.cds                      ドメインモデル
+    ├── srv/                                アプリ内で利用されるサービスモデルとカスタムハンドラ(バックエンド本体)
+    │   ├── server.js                           CORS設定をコントロールするミドルウェアを実装
+    │   ├── reporting-service.cds               サービスモデル
+    │   ├── reporting-service.js                カスタムハンドラ
+    │   ├── external/
+    │   │   └── aribaOpenAPI.js                     AribaのAPIを呼び出すカスタムモジュール
+    │   └── lib/
+    │       ├── designTimeTools.js                  コーディング時に利用するカスタムモジュール
+    │       ├── ODataRequestHandler.js              フロントエンドからのODataクエリをパースするカスタムモジュール
+    │       └── ODataResponseHandler.js             フロントエンドへのODataレスポンスを$selectや$orderbyにより調整するカスタムモジュール
+    ├── xs-security.json                    アプリを利用するために必要な権限ロールの設定
+    ├── mta.yaml                            Multi Target Application (mta) : BTP上のマイクロサービスを横断・統合したデプロイ設定
+    ├── package.json                        プロジェクトのメタデータと設定
+    └── README.md                           本スタートガイド
 
+```
 
 ## 2. 環境変数の設定
 SAP Ariba 環境のAPIキーやレルム等の情報については、セキュリティ上の理由でgitリポジトリの管理から排除しています。
