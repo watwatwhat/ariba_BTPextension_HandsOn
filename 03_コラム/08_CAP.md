@@ -2,14 +2,15 @@
 
 ### 主な構成要素
 
-- **CDL（Core Data Services）**:
-  データモデルとビジネスロジックを定義します。
+- UIレイヤ
+    - **アノテーション**: バックエンド側でデータモデルにUI情報を付加することで、FioriのUIがフロントエンドで自動生成
+- アプリケーションレイヤ
+    - **Service Definition**: CAPがODataサービス層を定義して提供、APIを通じて外部に公開可能
+    - **Service Implementation**: 実際のビジネスロジックを実装
+- DBレイヤ
+    - **CDL(Definition Language)**: 人間に読みやすい形で、データモデルを定義
 
-- **Service Definition**:
-  OData サービス層を定義し、APIを通じて外部に公開します。
-
-- **Service Implementation**:
-  実際のビジネスロジックを実装します。
+![CAP](../00_Assets/99_Column/08_CAP.png)
 
 
 ### CAPアプリケーションの基本的なディレクトリ構造

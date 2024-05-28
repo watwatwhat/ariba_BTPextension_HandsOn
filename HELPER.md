@@ -17,7 +17,7 @@
 | SAP Build Work Zone, standard edition             | 企業向けのデジタルワークスペースを提供するサービス | [コラム](./03_コラム/04_managedApprouter.md) <br> [SAP Discovery Center](https://discovery-center.cloud.sap/serviceCatalog/sap-build-work-zone-standard-edition?region=all)    |
 | Fiori | SAPのソフトウェアに対するユーザーエクスペリエンス(UX)のアプローチ <br> ロールベース」、「アダプティブ」、「シンプル」、「一貫性があり」、「独立している」という五つの基本原則に基づく | [デザインガイドライン](https://experience.sap.com/fiori-design-web/) <br> [コラム](./03_コラム/07_Fiori.md)|
 | SAPUI5 (SAP User Interface for HTML5) | MVCアーキテクチャに基づいたフロントエンド開発フレームワーク <br> HTML5、CSS3、JavaScriptを基に構築 | [リファレンス](https://sapui5.hana.ondemand.com/)|
-| Fiori Elements            | Fioriアプリの雛形を用いて開発工数を削減するアプローチ | [デザインガイドライン](https://experience.sap.com/fiori-design-web/smart-templates/)   |
+| Fiori Elements            | Fioriアプリの雛形を用いて開発工数を削減するアプローチ | [デザインガイドライン](https://experience.sap.com/fiori-design-web/smart-templates/) <br> [コラム](./03_コラム/07_Fiori.md) |
 
 
 ## Web開発一般 用語
