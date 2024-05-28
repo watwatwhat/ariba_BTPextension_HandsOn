@@ -100,6 +100,10 @@ cds watch
 > cds watch は、CAPアプリケーションをプレビューするためのコマンドです。<br>
 > このコマンドを実行するとCAPサーバーがローカル（今回はSAP Business Applciation StudioのDevSpace内）で立ち上がります。
 
+> [!NOTE]
+> SAP CAP について、より詳しく知りたい場合は下記をご参照ください。<br>
+> [コラム：SAP CAP とは？](../../03_コラム/08_CAP.md)
+
 ![command](../../00_Assets/02_backend/06_command.png)
 
 > [!TIP]

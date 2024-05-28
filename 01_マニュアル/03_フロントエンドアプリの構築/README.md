@@ -101,6 +101,10 @@
 > ODataについて、より詳しく知りたい場合は下記をご参照ください。<br>
 > [コラム：OData API とは？](../../03_コラム/05_OData.md) 
 
+> [!NOTE]
+> Fiori について、より詳しく知りたい場合は下記をご参照ください。<br>
+> [コラム：Fiori とは？](../../03_コラム/07_Fiori.md)
+
 ![aribaReport](../../00_Assets/03_frontend/09_aribaReport.png)
 
 
