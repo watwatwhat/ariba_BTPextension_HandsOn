@@ -9,7 +9,9 @@ SAP Fioriは、使いやすさを重視したデザインが特徴であり、�
 - コヒーレント
 
 ## 技術的枠組み
-SAP Fioriは、HTML5、CSS3、JavaScriptに基づくフレームワークである**SAPUI5**（または**OpenUI5**）を使用しています。これにより、洗練されたユーザーインタフェースの構築が可能です。
+SAP Fioriは、HTML5、CSS3、JavaScriptに基づくフレームワークである**SAPUI5**（または**OpenUI5**）を使用しています。これにより、洗練されたユーザーインタフェースの構築が可能です。<br>
+<br>
+![Fiori](../00_Assets/99_Column/07_Fiori.png)
 
 ## アーキテクチャ
 SAP Fiori アプリケーションは主に以下の三層で構成されています：
